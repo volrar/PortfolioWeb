@@ -1,0 +1,423 @@
+/* Resets credit: Joshua Comeau*/
+*, *::before, *::after { /*more-intuitive box-sizing model.*/
+    box-sizing: border-box;
+  }
+
+  * {/*Remove default margin*/
+    margin: 0;
+  }
+
+  body {/*Add accessible line-height + Improve text rendering*/
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  img, picture, video, canvas, svg {/*Improve media defaults*/
+    display: block;
+    max-width: 100%;
+  }
+
+  input, button, textarea, select {/* Remove built-in form typography styles*/
+    font: inherit;
+  }
+
+  p, h1, h2, h3, h4, h5, h6 {/*Avoid text overflows*/
+    overflow-wrap: break-word;
+  }
+  
+  #root, #__next {/*Create a root stacking context*/
+    isolation: isolate;
+  }
+/* Begin Styles */
+
+  a:any-link {
+    text-decoration: none;
+  }
+
+  * {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: .3rem;
+  }
+  
+  /* h4{
+
+}
+  
+  h5 {
+
+} */
+  #wrapper{
+    margin: 0 auto;
+    width: 80%;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+
+  img {
+    width:  auto;
+    height: 100%;
+  }
+
+  /* Hero/CTA */
+
+  .hero-img-content{
+    height: 10rem;
+    background-image: url(Images/Hero-img.png);
+    background-position: center;
+  }
+
+  .hero-p{
+    width: 50%;
+    text-align: center;
+    position: relative;
+    top: 10%;
+    margin: 0 3rem;
+    background-color: red;
+    color: white;
+  }
+
+  .cta-button {
+    text-align: center;
+    width: 7rem;
+    border-radius: 1rem;
+    margin: 1rem 5rem;
+    position: relative;
+    background-color: violet;
+  }
+
+  /* Index Navigation */
+
+.main-navigation-container {
+    display: flex;
+    justify-content: space-around;
+    height:2.5rem;
+    /* background-color:aqua; */
+  }
+
+  .primary-logo{
+    position: relative;
+  }
+
+  .primary-navigation {
+    display: flex;
+    justify-content: space-evenly;
+    height: 100%;
+    width: 100%;
+    /* background-color:blueviolet; */
+  }
+
+  .primary-link {
+    margin: 1rem 0;
+    position: relative;
+    display: flex;
+    /* background-color: green; */
+  }
+
+.secondary-navigation {
+    position: relative;
+    display: flex;
+    width: 40%;
+    top: .5rem;
+}
+
+.secondary-link {
+  position: relative;
+  margin: .2rem;
+  height: 2rem;
+  width: 1.5rem;
+  /* background-color: red; */
+}
+
+body{
+  background-color: rgba(16, 16, 16, 0.353);
+}
+
+/* About me Title */
+
+#about-me {
+  background-image: url("Images/PortfolioShot5.jpg");
+  background-position: right;
+  background-attachment: fixed;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.about-me-container{
+  display: flex;
+  margin: 0 auto;
+  width: 80%;
+}
+
+.about-me-content {
+  width: 100%;
+  color: black;
+}
+
+.about-me-img-container {
+  width: 80%;
+  height: 50%;
+  margin: 6rem 0;
+}
+
+.about-me-button-container {
+    display: inline-block;
+    text-align: center;
+    width: 5rem;
+    height: 2rem;
+    background-color: red;
+}
+
+.about-me-button-container:hover {
+  transition: 200ms;
+  background-color: transparent;
+  border: 2px solid black;
+}
+
+.about-me-button {
+    position: relative;
+    top: .3rem;
+}
+
+.about-me-button:hover {
+  color: yellow;
+}
+
+/* Review Section */
+
+#reviews {
+  margin: auto;
+  width: 80%;
+}
+
+/* .content {
+  background-color: red;
+} */
+
+.reviews-h2{
+  font-size: 1.5rem;
+}
+
+/* .reviews-container {
+  background-color: blue;
+} */
+
+.review-card {
+  display: flex;
+  margin: 1rem 0;
+  width: 100%;
+}
+
+.review-card:nth-child(even) {
+  flex-direction: row-reverse;
+  /* background-color: pink; */
+}
+
+.review-top {
+  width: 28%;
+  /* background-color: cyan; */
+}
+
+.review-client-img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 100rem;
+}
+
+.review-client-img-container{
+  /* background-color: red; */
+  height: 75%;
+  display: flex;
+  justify-content: center;
+}
+
+.review-client-name {
+  display: flex;
+  justify-content: center;
+  /* background-color: green; */
+}
+
+.review-bottom {
+  width: 100%;
+  padding: 0 .5rem;
+  text-align: center;
+  /* background-color: purple; */
+}
+
+.review {
+  font-size: .8rem;
+}
+
+/* Certificates */
+
+#certificates {
+  width: 80%;
+  margin: auto;
+}
+
+.certificate {
+  width: 5rem;
+  height: 5rem;
+  /* background-color: purple; */
+}
+
+.ceritifcates-container {
+  display: flex;
+  /* background-color: red; */
+}
+
+.certificates-img-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width:160%; 
+  padding: 1rem;
+}
+
+.certificates-content-container {
+  width: 400%;
+  margin: 0 2rem;
+  font-size: 1.1rem;
+  /* background-color: blue; */
+}
+
+.certificates-content{
+  width: 100%;
+  /* background-color: pink; */
+}
+
+/* Contact Form */
+
+#contact {
+  width: 80%;
+  margin: auto;
+}
+
+.contact-h2 {
+  font-size: 1.5rem;
+}
+.contact-form-container{
+  /* background-color: pink; */
+  height: 25rem;
+  display: flex;
+}
+
+.contact-form {
+  height: 20rem;
+  /* background-color: rgb(103, 68, 68); */
+  margin: 0 auto;
+}
+
+input {
+  margin: 1rem 0;
+}
+
+#fname {
+  height: 3rem;
+  width: 100%;
+  border: 3px solid rgba(16, 16, 16, 0.533);
+  background-color: transparent;
+}
+
+#lname {
+  height: 3rem;
+  width: 100%;
+  border: none;
+  border: 3px solid rgba(16, 16, 16, 0.533);
+  background-color: transparent;
+}
+
+#email {
+  height: 3rem;
+  width: 100%;
+  border: none;
+  border: 3px solid rgba(16, 16, 16, 0.533);
+  background-color: transparent;
+}
+
+#message {
+  width: 100%;
+  height: 6rem;
+  border: none;
+  border: 3px solid rgba(16, 16, 16, 0.533);
+  background-color: transparent;
+}
+
+.contact-form-submit {
+  background-color: green;
+}
+
+/* footer */
+
+  footer {
+    display: flex;
+    justify-content: center;
+  }
+
+/* Projects */
+
+#featured-projects {
+
+}
+
+.featured-projects-container {
+  width: 80%;
+  position: relative;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: red;
+}
+
+.project-card {
+  width: 50%;
+  height: auto;
+  cursor: pointer;
+  background-color:blue;
+}
+
+.project-card-header {
+  width: 100%;
+  background-color: pink;
+}
+
+/* .htmlLogo {
+
+}
+
+.cssLogo {
+
+}
+
+.javaScriptLogo {
+
+} */
+
+.project-card-img {
+  width: 100%;
+  height: auto;
+  background-color: purple;
+}
+
+.project-card-img:hover {
+  transform: scale(1.03);
+}
+
+.project-card-description {
+  background-color: green;
+}
+
